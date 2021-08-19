@@ -1,0 +1,23 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Build a command line application that accepts user input and generates a readme file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hayden-Haun/README-GENERATOR.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Hayden-Haun/README-GENERATOR/issues"
+  },
+  "homepage": "https://github.com/Hayden-Haun/README-GENERATOR#readme"
+}
