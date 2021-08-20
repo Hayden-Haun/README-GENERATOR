@@ -6,6 +6,8 @@ function renderLicenseBadge(license) {
     this project is licensed with ${license}.`;
   }
   return "";
+
+  //BADGE EXAMPLE / CODE https://naereen.github.io/badges/
 }
 
 // TODO: Create a function that returns the license link
