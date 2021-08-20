@@ -11,8 +11,13 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
   {
     type: "input",
+    message: "What is the project name?",
+    name: "project",
+  },
+  {
+    type: "input",
     message: "What is your GitHub username?",
-    name: "github",
+    name: "userName",
   },
   {
     type: "input",
@@ -25,13 +30,20 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is the project name?",
-    name: "project",
+    name: "description",
+    message: "Give a brief description of your project",
   },
   {
     type: "input",
-    name: "description",
-    message: "Give a brief description of your project",
+    name: "installation",
+    message: "What commands should be run for dependencies?",
+    default: "npm i",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Please specify usage information for this project:",
+    default: "npm index.js",
   },
   {
     type: "list",
@@ -49,12 +61,7 @@ const questions = [
       "None",
     ],
   },
-  {
-    type: "input",
-    name: "installation",
-    message: "What commands should be run for dependencies?",
-    default: "npm i",
-  },
+
   {
     type: "input",
     name: "test",

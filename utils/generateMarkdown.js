@@ -22,19 +22,42 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.project}
 
+  ## Author
+  Name: ${data.userName}
+
+  ## Liscence 
+
+  ## Table of Contents
+
+  [Description](#description)  
+  [Installation](#installation)  
+  [Usage](#usage)  
+  [Contributing](#contributing)  
+  [Tests](#tests)  
+  [Questions](#questions)
+
   ## Description
 
   ${data.description}
 
-  ## Table of Contents
-  
+  ## Installation
+
+  ${data.installation}
+
+  ## Usage
+
+  ${data.usage}
+
   ## Tests
 
   ${data.test}
 
-  ## Contributions
+  ## Contributing
   
   ${data.contributon}
+
+  ## Questions
+  Conact email: ${data.email}
 `;
 }
 
