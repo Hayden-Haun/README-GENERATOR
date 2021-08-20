@@ -3,7 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const { title } = require("process");
 
-const generateMarkdown = require("./utils.generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 
@@ -22,7 +22,7 @@ const questions = [
   {
     type: "input",
     message: "What is the project name?",
-    name: "title",
+    name: "project",
   },
   {
     type: "input",
@@ -32,18 +32,30 @@ const questions = [
   {
     type: "list",
     name: "liscense",
-    message: "What kind of license does your project user?",
-    choices: ["MIT", "Option2", "Option3", "Option4"],
+    message: "What kind of license does your project use?",
+    choices: [
+      "GNU AGPLv3",
+      "GNU GPLv3",
+      "GNU LGPLv3",
+      "Mozilla Public License 2.0",
+      ,
+      "Apache License 2.0",
+      "MIT License",
+      "Boost Software License 1.0",
+      "None",
+    ],
   },
   {
     type: "input",
     name: "installation",
     message: "What commands should be run for dependencies?",
+    default: "npm i",
   },
   {
     type: "input",
     name: "test",
     message: "What commands should be run for tests?",
+    default: "npm test",
   },
   {
     type: "input",
@@ -53,21 +65,23 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(data) {
+  return generateMarkdown(data);
+}
 
 // TODO: Create a function to initialize app
 function init() {
   //present the user with questions
   inquirer.prompt(questions).then((data) => {
-    // console.log(data);
-    //
-
-    fs.writeFile("README.md", JSON.stringify(data), (err) => {
+    const markdown = generateMarkdown(data);
+    fs.writeFile("README.md", markdown, (err) => {
       err
         ? console.log(err)
         : console.log("Success - File was written!! See README.md");
     });
   });
+
+  //writeToFile("README.md", data);
 }
 
 // Function call to initialize app
