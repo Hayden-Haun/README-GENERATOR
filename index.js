@@ -47,7 +47,7 @@ const questions = [
   },
   {
     type: "list",
-    name: "liscense",
+    name: "license",
     message: "What kind of license does your project use?",
     choices: [
       "GNU AGPLv3",
@@ -95,10 +95,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
-//--------tutor session.
-//npmjs
-//view documentation
-
-//npm init
-//npm install in inquirer
