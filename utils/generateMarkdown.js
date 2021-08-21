@@ -23,7 +23,6 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
 //This function generates the README.md file based on the user's inputs. It calls render liscence functions if the user chooses any option except "none"
 function generateMarkdown(data) {
   return `# ${data.project}
@@ -34,10 +33,11 @@ function generateMarkdown(data) {
 
   - [Description](#description)
   - [Installation](#installation)
-  - [Contributing](#contributing)
+  - [Contributions](#contributions)
   - [Usage](#usage)
   - [Tests](#tests)
   - [Technologies Used](#technologies)
+  - [Credits](#credits)
   - [Questions](#questions)
 
   ## Description
@@ -48,7 +48,7 @@ function generateMarkdown(data) {
 
     ${data.installation}
 
-  ## Contributing
+  ## Contributions
   
     ${data.contributon}
 
@@ -60,7 +60,15 @@ function generateMarkdown(data) {
 
     ${data.test}
 
+  ## Technologies
+
+    ${data.technologies}
+
   ${renderLicenseSection(data.license)} 
+
+  ## Credits
+
+    ${data.credits}
 
   ## Questions
   

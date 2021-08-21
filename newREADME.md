@@ -1,4 +1,6 @@
-# README GENERATOR
+# New Project
+
+![npm](https://img.shields.io/static/v1?label=npm&message=MIT_License&color=orange)
 
 ## Table of Contents
 
@@ -11,11 +13,9 @@
 - [Credits](#credits)
 - [Questions](#questions)
 
-![Screenshot](./utils/screenshot.png "README GENERATOR")
-
 ## Description
 
-    This is a command line applications that prompts users with questions about their GitHub project and uses the answers to generate a well formatted README.md file with both a license badge & a table of contents.
+    This project is the best... ever!
 
 ## Installation
 
@@ -31,11 +31,15 @@
 
 ## Tests
 
-    none
+    npm test
 
 ## Technologies Used
 
     Javascript & Node.js
+
+## License
+
+    This project is licensed with MIT_License.
 
 ## Credits
 
