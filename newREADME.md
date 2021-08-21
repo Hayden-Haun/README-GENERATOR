@@ -1,50 +1,50 @@
-# New Project
+# Demonstration
+  
+  ![npm](https://img.shields.io/static/v1?label=npm&message=MIT_License&color=orange)
 
-![npm](https://img.shields.io/static/v1?label=npm&message=MIT_License&color=orange)
+  ## Table of Contents
 
-## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Contributions](#contributions)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Technologies Used](#technologies)
+  - [Credits](#credits)
+  - [Questions](#questions)
 
-- [Description](#description)
-- [Installation](#installation)
-- [Contributions](#contributions)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Technologies Used](#technologies)
-- [Credits](#credits)
-- [Questions](#questions)
+  ## Description
 
-## Description
+    Brief description goes here
 
-    This project is the best... ever!
-
-## Installation
+  ## Installation
 
     npm i
 
-## Contributions
+  ## Contributions
+  
+    Contact the creator
 
-    Contact the owner
-
-## Usage
+  ## Usage
 
     npm index.js
 
-## Tests
+  ## Tests
 
-    npm test
+    None
 
-## Technologies Used
+  ## Technologies
 
-    Javascript & Node.js
+    Javascript & node.js
 
-## License
+  ## License
+    
+    This project is licensed with MIT_License. 
 
-    This project is licensed with MIT_License.
-
-## Credits
+  ## Credits
 
     Hayden Haun
 
-## Questions
-
+  ## Questions
+  
     For additional questions, please contact GitHub user Hayden-Haun at haydenhaun@gmail.com
