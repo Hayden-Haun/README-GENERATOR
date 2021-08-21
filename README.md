@@ -1,46 +1,40 @@
-# ProjectName
-
-  ## Author
-
-    GitHub UserName: UserName
+# project
   
-  undefined
+  ![npm](https://img.shields.io/static/v1?label=npm&message=GNU_LGPLv3&color=orange)
 
   ## Table of Contents
 
-    [Description](#description)  
-    [Installation](#installation)  
-    [Usage](#usage)  
-    [Contributing](#contributing)  
-    [Tests](#tests)  
-    [Questions](#questions)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Description
 
-    This is a wonderful application
+    grsgsez
 
   ## Installation
 
     npm i
 
+  ## Contributing
+  
+    rgsregsregs
 
   ## Usage
 
     npm index.js
 
-
   ## Tests
 
     npm test
 
-
-  ## Contributing
-  
-    Email me!!
-
+  ## License
+    
+    This project is licensed with GNU_LGPLv3. 
 
   ## Questions
-    For additional questions, please contact: email@email.com
-
-  ## License
-      This project is licensed with Mozilla Public License 2.0. 
+  
+    For additional questions, please contact GitHub user name at email@gmail.com

@@ -1,50 +1,44 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//  Function returns a license badge based on which liscence the user chooses. It calls the renderLicense function if the user chooses any option except "none"
 function renderLicenseBadge(license) {
-  //BADGE EXAMPLE / CODE https://naereen.github.io/badges/
-  //[![Generic badge](https://img.shields.io/badge/<SUBJECT>-<STATUS>-<COLOR>.svg)](https://shields.io/)
-  if (license != "none") {
-    //return renderLicenseLink(license);
+  if (license != "None") {
+    return renderLicenseLink(license);
   } else {
     return ``;
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function returns the URL for the badge image.
 function renderLicenseLink(license) {
-  return `https://img.shields.io/static/v1?label=npm&message=$%7Binput.license%7D&color=orange`;
+  return `![npm](https://img.shields.io/static/v1?label=npm&message=${license}&color=orange)`;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function creates the license section of README.md if the user selects any option except "none"
 function renderLicenseSection(license) {
-  if (license != "none") {
+  if (license != "None") {
     return `## License
-      This project is licensed with ${license}.`;
+    
+    This project is licensed with ${license}.`;
   } else {
     return ``;
   }
 }
 
 // TODO: Create a function to generate markdown for README
+//This function generates the README.md file based on the user's inputs. It calls render liscence functions if the user chooses any option except "none"
 function generateMarkdown(data) {
   return `# ${data.project}
-
-  ## Author
-
-    GitHub UserName: ${data.userName}
   
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
 
-    [Description](#description)  
-    [Installation](#installation)  
-    [Usage](#usage)  
-    [Contributing](#contributing)  
-    [Tests](#tests)  
-    [Questions](#questions)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [Usage](#usage)
+  - [Tests](#tests)
+  - [Technologies Used](#technologies)
+  - [Questions](#questions)
 
   ## Description
 
@@ -54,27 +48,27 @@ function generateMarkdown(data) {
 
     ${data.installation}
 
+  ## Contributing
+  
+    ${data.contributon}
 
   ## Usage
 
     ${data.usage}
 
-
   ## Tests
 
     ${data.test}
 
-
-  ## Contributing
-  
-    ${data.contributon}
-
+  ${renderLicenseSection(data.license)} 
 
   ## Questions
-    For additional questions, please contact: ${data.email}
-
-  ${renderLicenseSection(data.license)} 
+  
+    For additional questions, please contact GitHub user ${data.userName} at ${
+    data.email
+  }
 `;
 }
 
+//Export code to index.js
 module.exports = generateMarkdown;
