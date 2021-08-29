@@ -72,10 +72,7 @@ function generateMarkdown(data) {
 
   ## Questions
   
-    For additional questions, please contact GitHub user ${data.userName} at ${
-    data.email
-  }
-`;
+  For additional questions, please contact GitHub user ${data.userName} via [Email](mailto:${data.email}) or [Github](https://www.github.com/${data.userName})`;
 }
 
 //Export code to index.js

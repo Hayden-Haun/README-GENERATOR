@@ -1,5 +1,7 @@
 # README GENERATOR
 
+[\* CLICK HERE to download and view a video demonstration](https://github.com/Hayden-Haun/README-GENERATOR/blob/main/Video%20Demonstration-README%20GENERATOR.webm)
+
 ## Table of Contents
 
 - [Description](#description)

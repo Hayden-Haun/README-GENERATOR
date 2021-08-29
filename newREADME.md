@@ -1,6 +1,6 @@
-# Demonstration
+# Sample Output
   
-  ![npm](https://img.shields.io/static/v1?label=npm&message=MIT_License&color=orange)
+  ![npm](https://img.shields.io/static/v1?label=npm&message=GNU_LGPLv3&color=orange)
 
   ## Table of Contents
 
@@ -15,7 +15,7 @@
 
   ## Description
 
-    Brief description goes here
+    sample output for README Generator
 
   ## Installation
 
@@ -31,15 +31,15 @@
 
   ## Tests
 
-    None
+    npm test
 
   ## Technologies
 
-    Javascript & node.js
+    HTML, CSS, Javascript, node.js, npm modules
 
   ## License
     
-    This project is licensed with MIT_License. 
+    This project is licensed with GNU_LGPLv3. 
 
   ## Credits
 
@@ -47,4 +47,4 @@
 
   ## Questions
   
-    For additional questions, please contact GitHub user Hayden-Haun at haydenhaun@gmail.com
+  For additional questions, please contact GitHub user Hayden-Haun via [Email](mailto:haydenhaun@gmail.com) or [Github](https://www.github.com/Hayden-Haun)
